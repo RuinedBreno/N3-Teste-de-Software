@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Trabalho-Final---Teste-de-Software
 Projeto de Teste de Software Nota 2 - Versão Final
 
@@ -109,3 +110,7 @@ npm test
 ```
 
 Este comando irá executar todos os arquivos de teste localizados na pasta test/ e exibir os resultados no console.
+=======
+# N3-Teste-de-Software
+N3 relacionada a matéria de Teste de Software do Curso de Engenharia de Software - 3º Semestre
+>>>>>>> d8c8d864cc84b942e9d226d67da3c22326a2efd4
