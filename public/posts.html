@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts - Mini Rede Social - Trabalho Final (N3 de Teste de Software)</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Posts</h1>
+        <nav>
+            <ul>
+                <li><a href='index.html'>Início</a></li>
+                <li><a href='albums.html'>Álbums</a></li>
+                <li><a href='comments.html'>Comentários </a></li>
+                <li><a href='todos.html'>Todos</a></li>
+                <li><a href='users.html'>Usuários</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> 
+        <h3>Lista de Posts</h3>
+        
+        </section id= "controls">
+        <label for ="userIdInput">Filtrar por User ID:</label>
+        <select id="userIdInput">
+            <option value="">Todos</option>
+        </select>
+        <button id="filterButton">Filtrar</button>
+        <button id="clearFilterButton">Limpar Filtro</button>
+    </section>
+
+    </section id="postsSection" aria-live="polite">
+        <!-- Posts serão carregados aqui -->
+    </section>
+
+    <template id="postTemplate">
+        <article class="post">
+            <h2 class="post-title"></h2>
+            <p class="post-body"></p>
+            <p class="post-userId"><strong>User ID:</strong> <span></span></p>
+        </article>
+    </template>
+    </main>
+
+     <footer>
+
+<p>&copy; 2025 - Teste de Software - Front-end and Tests: Breno Victorino Fachini, Back-end: Sophia Alberton Picasky, Documetação: Talita Caroline da Silva</p>
+
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadPosts();
+            loadUserIds();
+
+            document.getElementById('filterButton').addEventListener('click', filterPosts);
+            document.getElementById('clearFilterButton').addEventListener('click', clearFilter);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 20
+      arrivalRate: 5
+      name: warming-up
+    - duration: 20
+      arrivalRate: 20
+      name: medium
+    - duration: 20
+      arrivalRate: 50
+      name: stress-level
+    - duration: 20
+      rampTo: 100
+      arrivalRate: 5
+      name: peak
+scenarios:
+  - flow:
+      - get:
+          url: "/users"
+      - get:
+          url: "/posts"
+      - get:
+          url: "/comments"
+      - get:
+          url: "/albums"

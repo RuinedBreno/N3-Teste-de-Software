@@ -1,0 +1,16 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 5
+      arrivalRate: 1
+      name: Normal
+    - duration: 5
+      arrivalRate: 100
+      name: SPIKE
+    - duration: 5
+      arrivalRate: 2
+      name: Recuperação
+scenarios:
+  - flow:
+      - get:
+          url: "/posts"

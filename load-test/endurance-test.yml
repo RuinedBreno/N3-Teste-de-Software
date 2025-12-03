@@ -1,0 +1,10 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 120
+      arrivalRate: 3
+      name: Endurance Test
+scenarios:
+  - flow:
+      - get:
+          url: "/comments"

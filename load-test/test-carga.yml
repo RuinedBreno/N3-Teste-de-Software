@@ -1,0 +1,23 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 20
+      arrivalRate: 10
+      name: "Teste leve"
+    - duration: 20
+      arrivalRate: 30
+      name: "Teste moderado"
+      
+
+scenarios:
+  - name: "Endpoints principais"
+    flow:
+      - get:
+          url: "/posts"
+      - get:
+          url: "/users"
+      - get:
+          url: "/comments"
+      - get:
+          url: "/albums"
+

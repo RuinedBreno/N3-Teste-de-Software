@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentários - Mini Rede Social - Trabalho Final (N3 de Teste de Software)</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Comentários</h1>
+
+        <nav>
+            <a href="posts.html">Posts</a>
+            <a href="users.html">Usuários</a>
+            <a href="comments.html">Comentários</a>
+            <a href="todos.html">Todos</a>
+            <a href="albums.html">Álbuns</a>
+        </nav>
+    </header>
+
+    <main>
+        <h3>Lista de Comentários</h3>
+
+        <p id="loading" class="loading">Carregando comentários...</p>
+        <p id="error" class="error"></p>
+
+        <section id="comments-container">
+            <!-- Cards aparecem aqui -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Teste de Software — Front-end: Breno • Back-end: Sophia • Docs: Talita</p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            loadCommentsPage();
+        });
+    </script>
+
+</body>
+</html>
